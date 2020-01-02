@@ -1,0 +1,121 @@
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 85%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.21);
+}
+
+.navbar-brand {
+    height: auto !important;
+    padding: 12px 75px !important;
+    font-size: 31px;
+    color: #867dff !important;
+    text-transform: capitalize;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+}
+
+.logo img {
+    height: 173px;
+}
+
+.logo_text {
+    position: absolute;
+    top: 108px;
+    left: 273px;
+    color: #000;
+}
+
+.logo_text h2,
+.logo_text h3 {
+    margin: 0;
+}
+
+.logo_text h2 {
+    font-size: 39px;
+}
+
+.logo_text h3 {
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.navbar-toggler {
+    width: 46px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    padding: 9px;
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 3px;
+    background-color: #938bff;
+    margin-bottom: 6px
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        height: 80px !important;
+    }
+    .logo {
+        top: 67px !important;
+        left: 15px !important;
+    }
+    .logo_text {
+        top: 89px !important;
+        left: 108px !important;
+    }
+    .logo_text h3 {
+        font-size: 16px !important;
+    }
+    .logo_text h2 {
+        font-size: 18px !important;
+    }
+    .navbar-brand {
+        height: auto !important;
+        padding: 0 !important;
+        font-size: 25px;
+    }
+    header:before {
+        height: 169px;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 92%;
+    }
+    .back_arrow {
+        font-size: 34px;
+        color: #9189ff;
+        position: absolute;
+        right: 60px;
+        top: 9px;
+    }
+    .back_arrow:hover,
+    .back_arrow:focus {
+        color: #9189ff;
+    }
+}
+
+@media (min-width: 767px) {
+    a.nav-link {
+        color: #000000;
+        text-transform: capitalize;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 12px !important;
+    }
+}

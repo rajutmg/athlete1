@@ -1,0 +1,599 @@
+    #Bench_dips_wrap {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    
+    #Bench_dips_wrap .img_cov {
+        height: 330px;
+        overflow: hidden;
+        border-bottom-left-radius: 57px;
+    }
+    
+    #Bench_dips_wrap .img_cov img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #Bench_dips_wrap .overlay {
+        position: absolute;
+        background: #00000075;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border-bottom-left-radius: 57px;
+    }
+    
+    .overlay_text {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        color: #fff;
+    }
+    
+    .overlay_text p {
+        margin-bottom: 0;
+        font-weight: 200;
+        font-size: 15px;
+    }
+    
+    .overlay_text h2 {
+        letter-spacing: 1px;
+    }
+    
+    .circle_row h2 {
+        background: #8b55ae;
+        height: 45px;
+        width: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 200;
+        border: 1px solid #8d49b9;
+    }
+    
+    .circle_row h3 {
+        font-weight: 600;
+    }
+    
+    .bench_wrap {
+        background: #fff;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .circle_row {
+        margin-top: 20px;
+    }
+    
+    .circle_row .row {
+        margin-left: 32px;
+    }
+    
+    .circle_cov .segundo h2 {
+        background: #d580a7;
+        border: 1px solid #d580a7;
+    }
+    
+    .circle_cov .primero {
+        border-right: 1px solid #e6e6e6;
+    }
+    
+    .circle_cov .tercero {
+        border-left: 1px solid #e6e6e6;
+    }
+    
+    #time_zone {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #7d72ff;
+        padding: 15px;
+    }
+    
+    #time_zone a {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    .black_box {
+        background: black;
+        color: #fff;
+        height: 300px;
+        margin: 20px 0;
+        padding: 15px;
+    }
+    
+    .black_box h3 {
+        font-weight: 400;
+        font-size: 19px;
+        text-align: center;
+    }
+    /* tik_tok_page */
+    
+    #tik_tok {
+        height: 100vh;
+        color: #fff;
+    }
+    
+    .tik_tok_overlay {
+        height: 100vh;
+        background: #7d72ff94;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #tik_tok #time_zone {
+        background: transparent;
+    }
+    
+    #tik_tok #time_zone h1 {
+        font-size: 65px;
+    }
+    
+    #send_back {
+        position: fixed;
+        top: 40px;
+        font-size: 17px;
+    }
+    
+    #send_back a {
+        color: #fff;
+        padding-left: 35px;
+        font-weight: 200;
+    }
+    
+    #send_back ion-icon {
+        position: absolute;
+        top: 0px;
+        left: 9px;
+        font-size: 25px;
+    }
+    
+    .timer {
+        font-size: 85px;
+        margin-bottom: 15px;
+    }
+    
+    #tik_tok h2 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+    
+    span.set {
+        font-weight: 300;
+    }
+    
+    span.count {
+        font-size: 50px;
+    }
+    /* sign_up */
+    
+    .form_wrap {
+        margin-top: 18vh;
+    }
+    
+    .form_cov {
+        background: #efedff;
+        border-radius: 20px;
+        padding: 20px 15px;
+        margin: 25px 0;
+    }
+    
+    .form_cov .input-group {
+        margin-bottom: 10px;
+    }
+    
+    .form_cov .form-control {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        border-radius: 0;
+    }
+    
+    .form_cov .input-group-addon {
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        padding: 6px 0;
+        padding-left: 0;
+    }
+    
+    .form_cov a {
+        color: #576574;
+    }
+    
+    .form-group ion-icon {
+        font-size: 24px;
+        color: #576574;
+    }
+    
+    .sign_btn {
+        color: #867dff;
+        background-color: #efedff;
+        border-color: #efedff;
+        border-radius: 25px;
+        width: 65%;
+        font-weight: 500;
+        margin-bottom: 25px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .sign_btn:hover,
+    .sign_btn:focus {
+        color: #867dff;
+        background-color: #dddbf1;
+        border-color: #dddbf1;
+    }
+    
+    .que a {
+        color: #fff;
+    }
+    
+     ::placeholder {
+        color: #627284 !important;
+        opacity: 1;
+        /* Firefox */
+    }
+    
+     :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #627284 !important;
+    }
+    
+     ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #627284 !important;
+    }
+    /* body_parts_page */
+    
+    #start_slider,
+    #diet_inner,
+    #diceWrap {
+        padding-top: 270px;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 60%;
+    }
+    
+    #start_slider .swiper-slide {
+        width: 80% !important;
+    }
+    
+    .workout {
+        border-radius: 40px;
+    }
+    
+    .overlay_work {
+        height: 50vh;
+        background: #000000a1;
+        border-radius: 40px;
+        padding: 25px;
+        color: #fff;
+        text-align: left;
+    }
+    
+    .overlay_work h3 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    .overlay_work p {
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .start {
+        background: #7c72ff;
+        padding: 10px;
+        bottom: 18px;
+        position: absolute;
+        width: 62%;
+        left: 16%;
+        text-align: center;
+        border-radius: 25px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .start:hover,
+    .start:focus {
+        color: #fff;
+    }
+    /* listWrap */
+    
+    #listWrap {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 0;
+    }
+    
+    .list_item:nth-child(2) {
+        background: #241332;
+    }
+    
+    .list_item:nth-child(3) {
+        background: #327fd6;
+    }
+    
+    .blu,
+    .pik,
+    .pur {
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        padding-left: 20px;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    
+    .blu {
+        background: #985eff;
+    }
+    
+    .pik {
+        background: #d47fa6;
+    }
+    
+    .pur {
+        background: #241332;
+    }
+    
+    .list_item .right {
+        color: #ffffff6e;
+    }
+    
+    .list_item .right h1 {
+        font-size: 80px;
+        margin: 0px;
+    }
+    
+    .list_item .right h3 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .list_item .row {
+        margin: 0;
+    }
+    
+    .list_item .left h4 {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .list_item .left h2 {
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 25px;
+    }
+    /* diet_page */
+    
+    #dietWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .diet {
+        margin-top: 40%;
+        padding: 65px;
+    }
+    
+    .d_product {
+        width: auto;
+        display: flex;
+        background: #fff;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        color: #fff;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18);
+    }
+    
+    .d_product:hover,
+    .d_product:focus {
+        color: #333;
+    }
+    
+    .d_product img {
+        height: 64px;
+        width: 64px;
+    }
+    
+    .diet_cov {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17px;
+    }
+    /* diet_inner_page */
+    
+    #diet_inner .swiper-slide {
+        height: 75vh;
+    }
+    
+    .slide_cont {
+        background: white;
+        margin: 20px;
+        box-shadow: 0px 2px 3px rgba(175, 175, 175, 0.42);
+        padding: 20px;
+    }
+    
+    .slide_cont img {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+     :root {
+        --swiper-theme-color: #000000 !important;
+    }
+    /* calculator_page */
+    
+    #calculator_wrap {
+        /* position: absolute; */
+        z-index: -1;
+        width: 100%;
+    }
+    
+    #calculator_wrap .form_cov {
+        background: #fff;
+        border-radius: 0;
+        padding: 20px 20px;
+        padding-top: 300px;
+        margin: 0;
+        box-shadow: 0px -1px 7px rgba(134, 134, 134, 0.54);
+    }
+    
+    .calc_btn {
+        color: #fff;
+        background-color: #867dff;
+        border-color: #867dff;
+        border-radius: 25px;
+        width: 85%;
+        font-weight: 500;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .calc_btn:hover,
+    .calc_btn:focus {
+        background-color: #736aea;
+        border-color: #736aea;
+    }
+    
+    .btn.focus,
+    .btn:focus {
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0);
+    }
+    
+    #calculator_wrap .modal p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    #calculator_wrap .modal {
+        top: 20%;
+    }
+    
+    #calculator_wrap .modal-body {
+        padding: 0;
+    }
+    
+    #calculator_wrap .modal button {
+        width: 100%;
+        border-radius: 0;
+        background: #867dff;
+        border-color: #867dff;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .out_put {
+        padding: 20px;
+    }
+    
+    #calculator_wrap ion-icon {
+        font-size: 24px;
+        color: #576574;
+    }
+    /* workout_op_page */
+    
+    #workout_op {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #workout_op .diet {
+        padding: 65px;
+    }
+    
+    #workout_op .d_product {
+        width: 100%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 285px;
+    }
+    
+    #workout_op .d_product:hover,
+    #workout_op .d_product:focus {
+        color: #333;
+    }
+    
+    #workout_op .d_product img {
+        height: 64px;
+        width: 64px;
+    }
+    
+    #workout_op .d_product ion-icon {
+        height: 40px;
+        width: 40px;
+        padding: 15px;
+        color: #000;
+    }
+    
+    #workout_op .diet_cov {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17px;
+    }
+    
+    #workout_op .d_product:nth-child(1) {
+        background: #FF0F97;
+    }
+    
+    #workout_op .d_product:nth-child(2) {
+        background: #6458FF;
+    }

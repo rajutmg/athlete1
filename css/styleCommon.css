@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url(../fonts/new/HelveticaNeue\ Light.ttf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Medium';
+    src: url(../fonts/new/HelveticaNeue\ Medium.ttf);
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url(../fonts/new/HelveticaNeue\ Thin.ttf);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf9ff;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: transparent;
+}
+
+.btn-outline-dark.focus,
+.btn-outline-dark:focus {
+    box-shadow: 0 0 0 0px rgba(52, 58, 64, .5);
+}
+
+.btn-outline-dark.active,
+.btn-outline-dark:active,
+.show>.btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: transparent;
+}
+
+.offcanvas-nav .form-inline {
+    display: none
+}
+
+.is-hidden {
+    visibility: hidden;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.no_marpad {
+    padding: 0;
+}
+
+#mainWrapper {
+    height: auto !important;
+    margin: 0 auto !important;
+    clear: both !important;
+}
+
+#contantWrap {
+    margin: 20px 0;
+    padding-bottom: 15px;
+}
+
+.product_wrap {
+    background: #f9f9f9;
+    padding: 40px 0;
+}
+
+#diceWrap {
+    padding: 40px 0;
+}
+
+
+/*index*/
+
+.dice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.dice:hover {
+    color: #fff;
+}
+
+.dice_cov:nth-child(1) .dice {
+    background: #8477ff;
+}
+
+.dice_cov:nth-child(2) .dice {
+    background: #6eccfc;
+}
+
+.dice_cov:nth-child(3) .dice {
+    background: #0ae299;
+}
+
+.dice_cov:nth-child(4) .dice {
+    background: #feb84f;
+}
+
+.dice_cov:nth-child(5) .dice {
+    background: #ee5858;
+}
+
+.dice_cov:nth-child(6) .dice {
+    background: #cd57ef;
+}
+
+.dice h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-size: 20px;
+}

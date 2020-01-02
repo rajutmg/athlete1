@@ -1,0 +1,255 @@
+@media (max-width: 767px) {
+    /*	fonts*/
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .dice {
+        height: 155px;
+    }
+    .dice h3 {
+        font-size: 14px;
+    }
+    #diceWrap .dice_cov:nth-child(even) {
+        padding-left: 10px;
+    }
+    #diceWrap .dice_cov:nth-child(odd) {
+        padding-right: 10px;
+    }
+    /* offcanvas_menu */
+    button.btn.btn-block.btn-outline-dark.js-offcanvas-close.c-button {
+        width: 40px;
+        border: 0;
+        float: right;
+        padding: 0;
+    }
+    .mob_offcanvas_cov {
+        width: 100%;
+    }
+    .c-offcanvas--right .navbar {
+        padding: 0;
+    }
+    .mob_menu {
+        float: left;
+        color: #867dff !important;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+    .user_photo {
+        margin-bottom: 30%;
+    }
+    .user_photo:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        z-index: -1;
+        border-bottom-left-radius: 1%;
+        border-bottom-right-radius: 96%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 1px rgb(234, 234, 234);
+    }
+    .user_photo img {
+        float: left;
+        margin-left: 10px;
+    }
+    .user_photo .user_name {
+        float: left;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+    .user_photo p,
+    .user_photo h4 {
+        margin: 0;
+    }
+    .user_photo p {
+        font-weight: 300;
+    }
+    .burger_wrap {
+        padding: 15px 10px 25px 10px;
+        background: #fff;
+    }
+    .burger_wrap ion-icon {
+        font-size: 38px;
+        color: #867dff;
+    }
+    .offcanvas-nav {
+        margin-left: 10px;
+    }
+    .offcanvas-nav a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .offcanvas-nav span {
+        float: left;
+    }
+    .offcanvas-nav ion-icon {
+        margin-right: 25px;
+        margin-left: 10px;
+        font-size: 21px;
+    }
+    .mob_signin {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: #fff;
+    }
+    .mob_signin i {
+        margin-right: 5px;
+    }
+    /* listWrap_page */
+    .list_item {
+        display: flex;
+        height: 55vh;
+        position: relative;
+        background: #d47fa6;
+    }
+    .list_item:nth-child(2) {
+        background: #241332;
+        height: 30vh;
+    }
+    .list_item:nth-child(3) {
+        background: #327fd6;
+        height: 30vh;
+    }
+    .blu,
+    .pik,
+    .pur {
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 28%;
+        color: #fff;
+        padding-left: 20px;
+    }
+    .blu {
+        background: #985eff;
+        padding-top: 55%;
+    }
+    .pik {
+        background: #d47fa6;
+        padding-top: 8%;
+    }
+    .pur {
+        background: #241332;
+        padding-top: 8%;
+    }
+    #start_slider,
+    #diceWrap {
+        padding-top: 210px;
+    }
+    #diet_inner {
+        padding-top: 170px;
+    }
+    #calculator_wrap .form_cov {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+    #workout_op .d_product {
+        height: 130px;
+        margin-left: 0;
+    }
+    #workout_op .diet {
+        padding: 0 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .dice {
+        height: 265px;
+        margin-bottom: 30px !important;
+    }
+    .dice h3 {
+        font-size: 20px !important;
+        margin-top: 15px !important;
+    }
+    #Bench_dips_wrap .img_cov {
+        height: 420px;
+    }
+    .circle_row h2 {
+        height: 60px;
+        width: 60px;
+    }
+    .form_wrap {
+        margin: 0 30%;
+        margin-top: 18vh;
+    }
+    .overlay_work {
+        padding: 68px;
+    }
+    .start {
+        padding: 10px;
+        width: 20%;
+        left: 38%;
+    }
+    /* listWrap_page */
+    #listWrap {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 270px;
+    }
+    #listWrap .no_marpad {
+        display: flex;
+    }
+    .list_item {
+        flex: 1;
+        position: relative;
+        background: #d47fa6;
+    }
+    .list_item:nth-child(2) {
+        background: #241332;
+    }
+    .list_item:nth-child(3) {
+        background: #327fd6;
+    }
+    .blu,
+    .pik,
+    .pur {
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        padding-left: 20px;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .blu {
+        background: #985eff;
+    }
+    .pik {
+        background: #d47fa6;
+    }
+    .pur {
+        background: #241332;
+    }
+    .diet {
+        display: flex;
+    }
+    .d_product {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .diet {
+        margin-top: 20% !important;
+    }
+    .calc_btn {
+        width: 22%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .dice img {
+        height: 68px !important;
+    }
+}
