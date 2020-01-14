@@ -15,6 +15,10 @@
     p {
         font-size: 14px;
     }
+    ul,
+    ol {
+        font-size: 14px;
+    }
     .dice {
         height: 155px;
     }
@@ -146,7 +150,8 @@
         padding-top: 8%;
     }
     #start_slider,
-    #diceWrap {
+    #diceWrap,
+    #tranning_wrap {
         padding-top: 210px;
     }
     #diet_inner {
@@ -162,6 +167,12 @@
     }
     #workout_op .diet {
         padding: 0 100px;
+    }
+    .accordion .card-header {
+        font-size: 13px;
+    }
+    .card-body {
+        font-size: 11px;
     }
 }
 

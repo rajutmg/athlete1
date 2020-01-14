@@ -264,7 +264,8 @@
     
     #start_slider,
     #diet_inner,
-    #diceWrap {
+    #diceWrap,
+    #tranning_wrap {
         padding-top: 270px;
     }
     
@@ -274,8 +275,6 @@
     }
     
     .swiper-slide {
-        text-align: center;
-        font-size: 18px;
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -336,6 +335,11 @@
     .start:hover,
     .start:focus {
         color: #fff;
+    }
+    
+    #diet_inner ol,
+    #diet_inner ul {
+        padding-left: 10px;
     }
     /* listWrap */
     
@@ -431,6 +435,9 @@
         border-radius: 25px;
         color: #333;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.18);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .d_product:hover,
@@ -439,8 +446,8 @@
     }
     
     .d_product img {
-        height: 64px;
         width: 64px;
+        margin-bottom: 10px;
     }
     
     .diet_cov {
@@ -451,13 +458,10 @@
     }
     /* diet_inner_page */
     
-    #diet_inner .swiper-slide {
-        height: 75vh;
-    }
-    
     .slide_cont {
         background: white;
         margin: 20px;
+        margin-bottom: 40px;
         box-shadow: 0px 2px 3px rgba(175, 175, 175, 0.42);
         padding: 20px;
     }
@@ -488,7 +492,7 @@
     }
     
     .calc_btn {
-        color: #fff;
+        color: #fff !important;
         background-color: #867dff;
         border-color: #867dff;
         border-radius: 25px;
@@ -574,6 +578,7 @@
     #workout_op .d_product img {
         height: 64px;
         width: 64px;
+        margin-bottom: 0 !important;
     }
     
     #workout_op .d_product ion-icon {
@@ -616,4 +621,123 @@
     
     #factory_opt .d_product {
         color: #fff;
+    }
+    /* tranning_page */
+    
+    .accordion .card-header {
+        cursor: pointer;
+        background: #6458ff;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 3px;
+    }
+    
+    .accordion.heading-right .card-title {
+        position: absolute;
+        right: 50px;
+    }
+    
+    .accordion.indicator-plus .card-header:after {
+        font-family: 'FontAwesome';
+        content: "\f068";
+        float: right;
+    }
+    
+    .accordion.indicator-plus .card-header.collapsed:after {
+        content: "\f067";
+    }
+    
+    .accordion.indicator-plus-before.round-indicator .card-header:before {
+        font-family: 'FontAwesome';
+        font-size: 14px;
+        content: "\f078";
+        margin-right: 10px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .accordion.indicator-plus-before.round-indicator .card-header.collapsed:before {
+        content: "\f054";
+        color: #fff;
+        position: absolute;
+        right: 0;
+    }
+    
+    .accordion.indicator-plus-before .card-header:before {
+        font-family: 'FontAwesome';
+        content: "\f068";
+        float: left;
+    }
+    
+    .accordion.indicator-plus-before .card-header.collapsed:before {
+        content: "\f067";
+    }
+    
+    .accordion.indicator-chevron .card-header:after {
+        font-family: 'FontAwesome';
+        content: "\f078";
+        float: right;
+    }
+    
+    .accordion.indicator-chevron .card-header.collapsed:after {
+        content: "\f077";
+    }
+    
+    .accordion.background-none [class^="card"] {
+        background: transparent;
+    }
+    
+    .accordion.border-0 .card {
+        border: 0;
+    }
+    
+    .card {
+        border: 0;
+    }
+    
+    .card-body {
+        padding: 0;
+    }
+    
+    .card-body .btn_done input {
+        background: #28a745;
+        color: #fff;
+        padding: 8px 30px;
+        border: 0;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    thead {
+        background: #c4c0f3;
+        color: #746aff;
+    }
+    
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 0px solid #e9ecef;
+    }
+    
+    .table-bordered thead td,
+    .table-bordered thead th {
+        border-bottom-width: 0px;
+    }
+    
+    .table-bordered th {
+        border: 0px solid #e9ecef;
+    }
+    
+    .table-bordered thead th:not(:last-child) {
+        border-right: 1px solid #e9ecef;
+    }
+    
+    .table-bordered {
+        border-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .card-header:first-child {
+        border-radius: 0;
     }
