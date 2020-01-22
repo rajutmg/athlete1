@@ -65,53 +65,66 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form_cov">
-                                <form>
-                                    <div class="input-group ">
-                                        <div class="input-group-addon">
-                                            <span class="input-group-text">Age</span>
+                                <form id="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <label for="validationCustom03">Age</label>
+                                            <div class="field_wrp">
+                                                <input type="number" class="form-control" id="email" placeholder="18" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your age
+                                                </div>
+                                            </div>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="18">
-                                    </div>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <span class="input-group-text">Weight (kg)</span>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <label for="validationCustom03">Weight(kg)</label>
+                                            <div class="field_wrp">
+                                                <input type="number" class="form-control" id="validationCustom04" placeholder="75" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your weight
+                                                </div>
+                                            </div>
                                         </div>
-                                        <input class="form-control" type="text" placeholder="75">
-                                        <div class="input-group-addon">
-                                            <span class="input-group-text">kg</span>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <label for="validationCustom03">Height (cm)</label>
+                                            <div class="field_wrp">
+                                                <input type="number" class="form-control" id="validationCustom04" placeholder="180" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your height
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <span class="input-group-text">Height (cm)</span>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <label for="validationCustom03">Gender</label>
+                                            <div class="field_wrp">
+                                                <select class="selectpicker form-control">
+                                                    <option>MALE</option>
+                                                    <option>FEMALE</option>
+                                                  </select>
+                                                <div class="invalid-feedback">
+                                                    Choose your gender
+                                                </div>
+                                            </div>
                                         </div>
-                                        <input class="form-control" type="text" placeholder="180">
-                                        <div class="input-group-addon">
-                                            <span class="input-group-text">cm</span>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <label for="validationCustom03">Exercise</label>
+                                            <div class="field_wrp">
+                                                <select class="selectpicker form-control">
+                                                    <option>No exercies</option>
+                                                    <option selected="selected">1-3 times/week</option>
+                                                    <option>4-5 times/week</option>
+                                                    <option>Daily Exercies</option>
+                                                    <option>Intesive daily</option>
+                                                  </select>
+                                                <div class="invalid-feedback">
+                                                    Please choose your schedule
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="input-group ">
-                                        <span class="input-group-addon">Gender</span>
-                                        <select class="selectpicker form-control">
-                                            <option>MALE</option>
-                                            <option>FEMALE</option>
-                                          </select>
-                                    </div>
-                                    <div class="input-group ">
-                                        <span class="input-group-addon">Exercies</span>
-                                        <select class="selectpicker form-control">
-                                            <option>No exercies</option>
-                                            <option selected="selected">1-3 times/week</option>
-                                            <option>4-5 times/week</option>
-                                            <option>Daily Exercies</option>
-                                            <option>Intesive daily</option>
-                                          </select>
-                                    </div>
-                                    <div class="col-md-12" align="center">
-                                        <a type="submit" class="btn btn-primary calc_btn" data-toggle="modal" data-target="#myModal">CALCULATOR</a>
-                                        <!-- Button to Open the Modal -->
-
-
+                                        <div class="col-md-12 mb-3" align="center">
+                                            <button type="submit" class="btn btn-primary calc_btn" data-toggle="modal" data-target="#myModal">CALCULATOR</button>
+                                            <!-- Button to Open the Modal -->
+                                        </div>
                                         <!-- The Modal -->
                                         <div class="modal" id="myModal">
                                             <div class="modal-dialog">
@@ -165,6 +178,26 @@
         </div>
         <a href="sign_in.html" class="mob_signin"><i class="fas fa-user-alt"></i> Sign in</a>
     </div>
+    <script>
+        $("#needs-validation").submit(function(event) {
+            if (this.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            this.classList.add('was-validated');
+        });
+
+        // Email validation.
+        $("#email").change(function() {
+            var email = $(this);
+            if (email.is(':invalid')) {
+                email.removeClass('is-valid').addClass('is-invalid');
+                email.siblings(".invalid-feedback").text(email.prop("validationMessage"))
+            } else {
+                email.removeClass('is-invalid').addClass('is-valid');
+            }
+        });
+    </script>
 </body>
 
 </html>
