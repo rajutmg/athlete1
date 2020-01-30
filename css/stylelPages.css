@@ -742,18 +742,6 @@
     .card-header:first-child {
         border-radius: 0;
     }
-    /* .form_flex {
-        display: flex;
-    }
-    
-    .field_wrp {
-        width: 100%;
-    }
-    
-    .form_flex label {
-        margin-bottom: 0;
-        margin-top: 6px;
-    } */
     
     #simpleWrap .new {
         margin: 15px 0;
