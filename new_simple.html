@@ -63,14 +63,12 @@
         </header>
         <div role="main">
             <!-- Swiper -->
-            <section id="diet_inner">
-                <div class="swiper-container">
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide_cont">
-                                <h3>Avocado : 23 Calorie</h3>
-                                <img src="img/avocado.png" class="img-fluid" alt="icon">
+            <section id="simpleWrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="new">
+                                <h3>Heading</h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                 <ol>
                                     <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
@@ -81,30 +79,7 @@
                                 </ol>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="slide_cont">
-                                <h3>Watermelon : 28 Calorie</h3>
-                                <img src="img/watermelon.png" class="img-fluid" alt="icon">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem
-                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide_cont">
-                                <h3>Watermelon : 13 Calorie</h3>
-                                <img src="img/juice.png" class="img-fluid" alt="icon">
-                                <ol>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-                                </ol>
-                            </div>
-                        </div>
                     </div>
-                    <!-- Add Pagination -->
                 </div>
             </section>
             </main>
@@ -134,17 +109,5 @@
             <a href="sign_in.html" class="mob_signin"><i class="fas fa-user-alt"></i> Sign in</a>
         </div>
 </body>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        autoHeight: true,
-        centeredSlides: true,
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
 
 </html>

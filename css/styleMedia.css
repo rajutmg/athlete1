@@ -154,7 +154,8 @@
     #tranning_wrap {
         padding-top: 210px;
     }
-    #diet_inner {
+    #diet_inner,
+    #simpleWrap {
         padding-top: 170px;
     }
     #calculator_wrap .form_cov {
