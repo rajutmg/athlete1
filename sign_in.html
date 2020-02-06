@@ -37,23 +37,37 @@
                                         <ion-icon name="ios-arrow-back"></ion-icon> Cancel and get back</a>
                                 </section>
                                 <div class="form_wrap">
-                                    <form>
+                                    <form id="needs-validation" novalidate>
                                         <div class="form-group">
                                             <img src="img/logo.png" class="img-fluid" alt="logo">
-                                            <div class="form_cov">
-                                                <div class="input-group ">
-                                                    <div class="input-group-addon">
-                                                        <span class="input-group-text"><ion-icon name="md-mail"></ion-icon></span>
+                                            <div class="form_cov clearfix">
+                                                <div class="col-md-12 form_flex mb-3 clearfix">
+                                                    <div class="grp_cov">
+                                                        <div class="input-group-addon">
+                                                            <span class="input-group-text"><ion-icon name="md-mail"></ion-icon></span>
+                                                        </div>
+                                                        <div class="grp_feild field_wrp">
+                                                            <input type="email" class="form-control" placeholder="Email" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide your Email
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <input type="text" class="form-control" placeholder="Email">
                                                 </div>
-                                                <div class="input-group" id="show_hide_password">
-                                                    <div class="input-group-addon">
-                                                        <span class="input-group-text"><ion-icon name="md-lock"></ion-icon></span>
-                                                    </div>
-                                                    <input class="form-control" type="password" placeholder="Password">
-                                                    <div class="input-group-addon">
-                                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                <div class="col-md-12 form_flex mb-3 clearfix">
+                                                    <div id="show_hide_password" class="grp_cov">
+                                                        <div class="input-group-addon">
+                                                            <span class="input-group-text"><ion-icon name="md-lock"></ion-icon></span>
+                                                        </div>
+                                                        <div class="grp_feild field_wrp">
+                                                            <input class="form-control" type="password" placeholder="Password" required>
+                                                            <div class="input-group-addon eye">
+                                                                <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                            </div>
+                                                            <div class="invalid-feedback">
+                                                                Set Your Password
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -93,6 +107,26 @@
         </div>
         <a href="sign_in.html" class="mob_signin"><i class="fas fa-user-alt"></i> Sign in</a>
     </div>
+    <script>
+        $("#needs-validation").submit(function(event) {
+            if (this.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            this.classList.add('was-validated');
+        });
+
+        // Email validation.
+        $("#email").change(function() {
+            var email = $(this);
+            if (email.is(':invalid')) {
+                email.removeClass('is-valid').addClass('is-invalid');
+                email.siblings(".invalid-feedback").text(email.prop("validationMessage"))
+            } else {
+                email.removeClass('is-invalid').addClass('is-valid');
+            }
+        });
+    </script>
 </body>
 
 </html>

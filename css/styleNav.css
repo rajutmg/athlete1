@@ -3,6 +3,7 @@ header {
     z-index: 1;
     width: 100%;
 }
+
 header:before {
     content: '';
     position: absolute;
@@ -12,6 +13,10 @@ header:before {
     border-bottom-right-radius: 85%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.21);
+}
+
+.exp_logo {
+    height: 85px;
 }
 
 .navbar-brand {

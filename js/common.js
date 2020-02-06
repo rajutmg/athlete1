@@ -121,3 +121,15 @@ function disableButton(btn) {
     document.getElementById(btn.id).style.backgroundColor = "#ee5858";
     document.getElementById(btn.id).value = "COMPLETED";
 }
+
+
+
+
+// form_validation
+$("#needs-validation").submit(function(event) {
+    if (this.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    this.classList.add('was-validated');
+});

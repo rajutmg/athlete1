@@ -748,3 +748,30 @@
         background: white;
         padding: 20px;
     }
+    /* ex_form */
+    
+    #ex_form #calculator_wrap .form_cov {
+        padding-top: 20px;
+        margin-top: 35px;
+    }
+    
+    .grp_cov .input-group-addon {
+        float: left;
+        width: 8%;
+        padding: 3.5px 0;
+    }
+    
+    .grp_feild {
+        float: left;
+        width: 90%;
+        text-align: left;
+    }
+    
+    #show_hide_password .form-control {
+        width: 92%;
+        float: left;
+    }
+    
+    #show_hide_password .eye {
+        padding: 8px 0;
+    }
