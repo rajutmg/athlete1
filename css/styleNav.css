@@ -21,7 +21,7 @@ header:before {
 
 .navbar-brand {
     height: auto !important;
-    padding: 12px 75px !important;
+    padding: 0px 75px !important;
     font-size: 31px;
     color: #867dff !important;
     text-transform: capitalize;
@@ -39,9 +39,9 @@ header:before {
 
 .logo_text {
     position: absolute;
-    top: 108px;
-    left: 273px;
     color: #000;
+    top: 108px;
+    left: 105px;
 }
 
 .logo_text h2,
@@ -83,8 +83,8 @@ header:before {
         left: 15px !important;
     }
     .logo_text {
-        top: 89px !important;
-        left: 108px !important;
+        top: 90px !important;
+        left: 30px !important;
     }
     .logo_text h3 {
         font-size: 16px !important;

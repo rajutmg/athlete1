@@ -175,9 +175,12 @@
         font-size: 11px;
     }
     .exp_logo {
-        height: 65px;
+        height: 65px !important;
         position: absolute;
         top: 5px;
+    }
+    .t-fix h4 {
+        font-size: 11px;
     }
 }
 
