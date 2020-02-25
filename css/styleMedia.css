@@ -113,6 +113,9 @@
     .mob_signin i {
         margin-right: 5px;
     }
+    .language {
+        top: 17px;
+    }
     /* listWrap_page */
     .list_item {
         display: flex;
@@ -166,7 +169,7 @@
         margin-left: 0;
     }
     #workout_op .diet {
-        padding: 0 100px;
+        padding: 0 100px !important;
     }
     .accordion .card-header {
         font-size: 13px;
@@ -181,6 +184,16 @@
     }
     .t-fix h4 {
         font-size: 11px;
+    }
+    .sl-flag {
+        width: 21px;
+        height: 21px;
+    }
+    #dietWrap .d_product {
+        height: 170px;
+    }
+    .meSign_in {
+        display: none;
     }
 }
 
@@ -255,9 +268,14 @@
     .diet {
         display: flex;
     }
-    .d_product {
-        width: 100%;
+    #dietWrap .diet {
+        display: block;
+    }
+    #dietWrap .d_product {
+        width: 31%;
         margin-left: 20px;
+        float: left;
+        height: 180px;
     }
     .diet {
         margin-top: 20% !important;
@@ -265,10 +283,52 @@
     .calc_btn {
         width: 22%;
     }
+    #factory_opt .d_product {
+        width: 100%;
+        height: 195px;
+    }
+    .meSign_in a {
+        color: #15759f !important;
+        padding: 30px !important;
+        font-weight: 600;
+        text-transform: uppercase !important;
+    }
+    .ml-auto {
+        margin-right: 133px;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .navbar-brand {
+        padding: 0px 0px !important;
+    }
     .dice img {
-        height: 68px !important;
+        height: 55px !important
+    }
+    .language {
+        right: 55px;
+    }
+    .logo_text {
+        left: 40px !important;
+    }
+    .logo_text h3 {
+        font-size: 23px !important;
+    }
+    .logo_text h2 {
+        font-size: 32px !important;
+    }
+    header:before {
+        height: 209px !important;
+        border-bottom-left-radius: 10% !important;
+    }
+    .dice {
+        height: 210px;
+    }
+    #dietWrap .d_product {
+        width: 46% !important;
+        height: 170px !important;
+    }
+    .diet {
+        padding-top: 90px !important;
     }
 }
