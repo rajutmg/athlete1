@@ -305,8 +305,18 @@
     .dice img {
         height: 55px !important
     }
+    #workout_op .diet {
+        padding: 0px 100px !important;
+    }
     .language {
-        right: 55px;
+        right: 28px;
+        top: 6px;
+    }
+    #workout_op .d_product {
+        height: 240px;
+    }
+    .ml-auto {
+        margin-right: 0;
     }
     .logo_text {
         left: 40px !important;
@@ -330,5 +340,16 @@
     }
     .diet {
         padding-top: 90px !important;
+    }
+    #factory_opt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .form_wrap {
+        margin: 0 22%;
+        margin-top: 10vh;
     }
 }

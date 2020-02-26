@@ -574,7 +574,7 @@
     
     #workout_op .d_product:hover,
     #workout_op .d_product:focus {
-        color: #333;
+        color: #000;
     }
     
     #workout_op .d_product img {
