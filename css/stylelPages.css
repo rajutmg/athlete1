@@ -712,7 +712,7 @@
         margin-bottom: 10px;
     }
     
-    thead {
+    thead th {
         background: #c4c0f3;
         color: #746aff;
     }
@@ -926,5 +926,212 @@
     
     #ex_form .d-flex th,
     #ex_form .d-flex td {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .profile_pic {
+        box-shadow: 0px 0px 9px #d4d4d4;
+        background: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .profile_pic h5 {
+        margin-top: 20px;
+    }
+    
+    .profile_pic img {
+        width: 185px;
+        height: 185px;
+        object-fit: cover;
+        border: 2px solid #6458ff;
+        border-radius: 50%;
+    }
+    
+    #ex_form .form_cov {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .ex_row {
+        background: white;
+        box-shadow: 0px 0px 9px #d4d4d4;
+        padding: 25px 10px;
+    }
+    
+    #ex_form .calc_btn {
+        margin: 0;
+    }
+    
+    .profile ul {
+        background: white;
+        padding: 20px;
+        box-shadow: 0px 0px 9px #d4d4d4;
+        position: relative;
+    }
+    
+    .profile ul li {
+        list-style: none;
+        line-height: 1.8;
+    }
+    
+    .profile ul li span {
+        width: 20%;
+    }
+    
+    .profile ul li .constant {
+        width: 21%;
+        float: left;
+        text-align: right;
+        margin-right: 30px;
+    }
+    
+    .profile .edit {
+        position: absolute;
+        z-index: 1;
+        right: 35px;
+        top: 15px;
+        font-size: 14px;
+    }
+    
+    .profile .edit a {
+        color: #333;
+    }
+    
+    .ex_row .btn-success {
+        color: #fff;
+        background-color: transparent;
+        border-color: transparent;
+        /* padding: 10px; */
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    #ex_form .calculator_wrap {
+        background: white;
+        margin-top: 15px;
+        box-shadow: 0px 0px 9px #d4d4d4;
+    }
+    
+    #ex_form .form_cov {
+        background: transparent;
+    }
+    
+    #ex_form .calc_btn {
+        width: 100%;
+    }
+    
+    #ex_form #tranning_wrap {
+        margin-bottom: 30px;
+    }
+    
+    #ex_form .c_pic .modal .modal-body {
+        padding: 0;
+    }
+    
+    #ex_form .c_pic .modal .btn-danger {
+        width: 100%;
+        border-radius: 0;
+        background: #867dff;
+        border-color: #867dff;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .edit_in .constant {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .edit_in .constant label {
+        margin: 0;
+    }
+    
+    .edit_input {
+        width: 80%;
+    }
+    
+    #myModal2 .form_cov {
+        padding: 20px 65px;
+    }
+    
+    #myModal2 .calc_btn {
+        margin-top: 20px;
+        width: 50%;
+    }
+    
+    .edit_layer {
+        margin-bottom: 10px;
+        display: flex;
+    }
+    
+    .profile-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        border-radius: 50%;
+    }
+    
+    .file-upload {
+        display: none;
+    }
+    
+    .circle {
+        position: relative;
+        border-radius: 50%;
+        width: 185px;
+        height: 185px;
+        border: 8px solid rgba(255, 255, 255, 0.7);
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .p-image {
+        position: absolute;
+        bottom: 3px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        color: #666666;
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        cursor: pointer;
+    }
+    
+    .p-image i {
+        width: 230px;
+        height: 177px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: black;
+        font-size: 17px;
+    }
+    
+    .p-image:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+    }
+    
+    .upload-button {
+        font-size: 1.2em;
+    }
+    
+    .upload-button:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        color: #867dff;
+    }
+    
+    .calculator_wrap.cal_fix {
+        position: fixed;
+        width: 20%;
+        top: 0;
     }

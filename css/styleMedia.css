@@ -195,6 +195,33 @@
     .meSign_in {
         display: none;
     }
+    .desk_view {
+        display: none;
+    }
+    #ex_form #tranning_wrap {
+        margin-bottom: 0;
+    }
+    .ex_row {
+        padding: 15px 0px;
+    }
+    .profile ul {
+        box-shadow: 0px 7px 9px #d4d4d4;
+    }
+    .profile_pic img {
+        width: 150px;
+        height: 150px;
+    }
+    .ex_row .btn-success {
+        padding: 0px !important;
+        margin: 5px 0px !important;
+    }
+    .circle {
+        width: 170px;
+        height: 170px;
+    }
+    .p-image i {
+        height: 160px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -296,6 +323,19 @@
     .ml-auto {
         margin-right: 133px;
     }
+    .c_pic {
+        padding-right: 0;
+    }
+    .mob_view {
+        display: none;
+    }
+    .edit_icons {
+        flex-direction: inherit !important;
+    }
+    #ex_form .d-flex th,
+    #ex_form .d-flex td {
+        flex: 1;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
@@ -351,5 +391,19 @@
     .form_wrap {
         margin: 0 22%;
         margin-top: 10vh;
+    }
+    .profile_pic img {
+        width: 170px;
+        height: 170px;
+    }
+    .ex_row .btn-success {
+        padding: 0px !important;
+        margin: 5px 0px !important;
+    }
+    .edit_icons {
+        flex-direction: column !important;
+    }
+    .calculator_wrap.cal_fix {
+        width: 29%;
     }
 }

@@ -1,3 +1,19 @@
+jQuery(function($) {
+    $(window).scroll(function() {
+        if (screen.width >= 768) {
+            if ($(window).scrollTop() > 500) {
+                $('.calculator_wrap').addClass('cal_fix');
+            } else if ($(window).scrollTop() <= 500) {
+                $('.calculator_wrap').removeClass('cal_fix');
+            }
+            if ($('.calculator_wrap').offset().top + $(".calculator_wrap").height() > $("footer").offset().top) {
+                $('.calculator_wrap').css('top', -($(".calculator_wrap").offset().top + $(".calculator_wrap").height() - $("footer").offset().top));
+            }
+        }
+    });
+});
+
+
 (function($) {
     $.fn.appendAround = function() {
         return this.each(function() {
@@ -34,6 +50,30 @@
     };
 }(jQuery));
 
+$(document).ready(function() {
+
+
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+    $(".file-upload").on('change', function() {
+        readURL(this);
+    });
+
+    $(".upload-button").on('click', function() {
+        $(".file-upload").click();
+    });
+});
 
 
 
@@ -121,6 +161,9 @@ function disableButton(btn) {
     document.getElementById(btn.id).style.backgroundColor = "#ee5858";
     document.getElementById(btn.id).value = "COMPLETED";
 }
+
+
+
 
 
 
