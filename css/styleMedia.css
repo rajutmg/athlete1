@@ -222,6 +222,22 @@
     .p-image i {
         height: 160px;
     }
+    #ex_form .d-flex th span {
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    #ex_form.ex_form1 .d-flex th,
+    #ex_form.ex_form1 .d-flex td {
+        flex: 1;
+        font-size: 7px;
+    }
+    #ex_form.ex_form1 .d-flex th span {
+        font-size: 6px;
+    }
+    #ex_form.ex_form1 .ex_row .btn-success {
+        padding: 4px !important;
+        margin: 5px 0px !important;
+    }
 }
 
 @media (min-width: 768px) {
