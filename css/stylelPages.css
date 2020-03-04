@@ -1051,7 +1051,7 @@
         width: 20%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        margin-top: 10px;
     }
     
     .edit_in .constant label {
@@ -1062,13 +1062,13 @@
         width: 80%;
     }
     
-    #myModal2 .form_cov {
+    .modal-dialog .form_cov {
         padding: 20px 65px;
     }
     
-    #myModal2 .calc_btn {
-        margin-top: 20px;
-        width: 50%;
+    .modal-dialog .calc_btn {
+        margin-top: 20px !important;
+        width: 50% !important;
     }
     
     .edit_layer {
@@ -1141,4 +1141,48 @@
         position: fixed;
         width: 20%;
         top: 0;
+    }
+    
+    #edit .edit_in .constant {
+        width: 35%;
+    }
+    
+    #edit .edit_input {
+        width: 65%;
+    }
+    
+    #ex_form #edit .calc_btn {
+        width: 40%;
+        margin-top: 20px;
+    }
+    
+    .card-body .form_cov {
+        padding: 20px 50px;
+    }
+    
+    .card-body .form_cov {
+        text-align: center;
+    }
+    
+    .card-body .form_cov a {
+        color: #fff;
+        float: none;
+        font-size: 14px;
+        background: #000000;
+        text-shadow: 0px 0px 0px;
+        opacity: 1;
+        font-weight: 300;
+        margin: 0 13px;
+        padding: 10px 20px;
+    }
+    
+    .card-body .form_cov a:first-child {
+        background: transparent;
+        border: 1px solid #000;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    .invalid-feedback {
+        display: block !important;
     }

@@ -114,15 +114,23 @@
                                                             </div>
                                                         </div> -->
                                                         <div class="form_cov">
-                                                            <form>
+                                                            <form novalidate="" action="/echo" method="POST" id="myForm">
                                                                 <div class="col-md-12 edit_in">
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Name:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Name
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Age:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="number" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="number" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Age
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Gender:</label></div>
@@ -131,24 +139,46 @@
                                                                                 <option selected="selected">Male</option>
                                                                                 <option>Female</option>
                                                                               </select>
-                                                                            <div class="invalid-feedback">
-                                                                                Please choose your schedule
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Height:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Height
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Email:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="email" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="email" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Email
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12" align="center">
-                                                                    <button type="submit" class="btn btn-primary calc_btn">APPLY</button>
+                                                                    <button type="submit" class="btn btn-primary calc_btn" id="btnSubmit">APPLY</button>
                                                                 </div>
                                                             </form>
+
+                                                            <script>
+                                                                $("#btnSubmit").click(function(event) {
+
+                                                                    // Fetch form to apply custom Bootstrap validation
+                                                                    var form = $("#myForm")
+
+                                                                    if (form[0].checkValidity() === false) {
+                                                                        event.preventDefault()
+                                                                        event.stopPropagation()
+                                                                    }
+
+                                                                    form.addClass('was-validated');
+                                                                    // Perform ajax submit here...
+
+                                                                });
+                                                            </script>
                                                         </div>
                                                     </div>
 
@@ -196,6 +226,105 @@
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
+                                                                            <tr class="d-flex">
+                                                                                <td class="col-3">2020-03-03</td>
+                                                                                <td class="col-3">75 Kg</td>
+                                                                                <td class="col-3">130</td>
+                                                                                <td class="col-3">123</td>
+                                                                                <td class="col-3">125</td>
+                                                                                <td class="col-3 edit_icons">
+                                                                                    <a class="btn btn-success" data-toggle="modal" data-target="#edit_1"><img src="img/icon/edit.png" class="img-fluid" alt="icon"></a>
+                                                                                    <a class="btn btn-success" data-toggle="modal" data-target="#col_del_1"><img src="img/icon/delete.png" class="img-fluid" alt="icon"></a>
+                                                                                </td>
+                                                                                <div class="modal fade" id="edit_1">
+                                                                                    <div class="modal-dialog">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h4 class="modal-title">Exercies Record</h4>
+                                                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <div class="form_cov">
+                                                                                                    <form novalidate="" action="/echo" method="POST" id="myForm1">
+                                                                                                        <div class="col-md-12 edit_in">
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>WEIGHT (kg)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>CHEST(cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>WAIST (cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>HIP (cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-12" align="center">
+                                                                                                            <button type="submit" class="btn btn-primary calc_btn" id="editSubmit">APPLY</button>
+                                                                                                        </div>
+                                                                                                    </form>
+
+                                                                                                    <script>
+                                                                                                        $("#editSubmit").click(function(event) {
+
+                                                                                                            // Fetch form to apply custom Bootstrap validation
+                                                                                                            var form = $("#myForm1")
+
+                                                                                                            if (form[0].checkValidity() === false) {
+                                                                                                                event.preventDefault()
+                                                                                                                event.stopPropagation()
+                                                                                                            }
+
+                                                                                                            form.addClass('was-validated');
+                                                                                                            // Perform ajax submit here...
+
+                                                                                                        });
+                                                                                                    </script>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal fade" id="col_del_1">
+                                                                                    <div class="modal-dialog">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h5 class="modal-title">Are you Sure you want to delete ?</h5>
+                                                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <div class="form_cov">
+                                                                                                    <a href="#" class="close btn btn-lg" data-dismiss="modal">YES</a>
+                                                                                                    <a href="#" class="close btn btn-lg" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </tr>
                                                                             <tr class="d-flex">
                                                                                 <td class="col-3">2020-03-03</td>
                                                                                 <td class="col-3">75 Kg</td>
@@ -334,15 +463,23 @@
                                                             </div>
                                                         </div> -->
                                                         <div class="form_cov">
-                                                            <form>
+                                                            <form novalidate="" action="/echo" method="POST" id="myForm">
                                                                 <div class="col-md-12 edit_in">
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Name:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Name
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Age:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="number" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="number" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Age
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Gender:</label></div>
@@ -351,24 +488,46 @@
                                                                                 <option selected="selected">Male</option>
                                                                                 <option>Female</option>
                                                                               </select>
-                                                                            <div class="invalid-feedback">
-                                                                                Please choose your schedule
-                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Height:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="text" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Height
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="row edit_layer">
                                                                         <div class="constant"><label>Email:</label></div>
-                                                                        <div class="edit_input"><input class="form-control" type="email" placeholder=""></div>
+                                                                        <div class="edit_input"><input class="form-control" type="email" placeholder="" required>
+                                                                            <div class="invalid-feedback">
+                                                                                Please Enter your Email
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12" align="center">
-                                                                    <button type="submit" class="btn btn-primary calc_btn">APPLY</button>
+                                                                    <button type="submit" class="btn btn-primary calc_btn" id="btnSubmit">APPLY</button>
                                                                 </div>
                                                             </form>
+
+                                                            <script>
+                                                                $("#btnSubmit").click(function(event) {
+
+                                                                    // Fetch form to apply custom Bootstrap validation
+                                                                    var form = $("#myForm")
+
+                                                                    if (form[0].checkValidity() === false) {
+                                                                        event.preventDefault()
+                                                                        event.stopPropagation()
+                                                                    }
+
+                                                                    form.addClass('was-validated');
+                                                                    // Perform ajax submit here...
+
+                                                                });
+                                                            </script>
                                                         </div>
                                                     </div>
 
@@ -422,7 +581,98 @@
                                                                                 <td class="col-3">130</td>
                                                                                 <td class="col-3">123</td>
                                                                                 <td class="col-3">125</td>
-                                                                                <td class="col-3 edit_icons"><button type="button" class="btn btn-success"><img src="img/icon/edit.png" class="img-fluid" alt="icon"></button><button type="button" class="btn btn-success"><img src="img/icon/delete.png" class="img-fluid" alt="icon"></button></td>
+                                                                                <td class="col-3 edit_icons">
+                                                                                    <a class="btn btn-success" data-toggle="modal" data-target="#edit"><img src="img/icon/edit.png" class="img-fluid" alt="icon"></a>
+                                                                                    <a class="btn btn-success" data-toggle="modal" data-target="#col_del"><img src="img/icon/delete.png" class="img-fluid" alt="icon"></a>
+                                                                                </td>
+                                                                                <div class="modal fade" id="edit">
+                                                                                    <div class="modal-dialog">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h4 class="modal-title">Exercies Record</h4>
+                                                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <div class="form_cov">
+                                                                                                    <form novalidate="" action="/echo" method="POST" id="myForm1">
+                                                                                                        <div class="col-md-12 edit_in">
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>WEIGHT (kg)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>CHEST(cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>WAIST (cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="row edit_layer">
+                                                                                                                <div class="constant"><label>HIP (cm)</label></div>
+                                                                                                                <div class="edit_input"><input class="form-control" type="number" placeholder="">
+                                                                                                                    <div class="invalid-feedback">
+                                                                                                                        Please Enter your Email
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-md-12" align="center">
+                                                                                                            <button type="submit" class="btn btn-primary calc_btn" id="editSubmit">APPLY</button>
+                                                                                                        </div>
+                                                                                                    </form>
+
+                                                                                                    <script>
+                                                                                                        $("#editSubmit").click(function(event) {
+
+                                                                                                            // Fetch form to apply custom Bootstrap validation
+                                                                                                            var form = $("#myForm1")
+
+                                                                                                            if (form[0].checkValidity() === false) {
+                                                                                                                event.preventDefault()
+                                                                                                                event.stopPropagation()
+                                                                                                            }
+
+                                                                                                            form.addClass('was-validated');
+                                                                                                            // Perform ajax submit here...
+
+                                                                                                        });
+                                                                                                    </script>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal fade" id="col_del">
+                                                                                    <div class="modal-dialog">
+                                                                                        <div class="modal-content">
+                                                                                            <div class="modal-header">
+                                                                                                <h5 class="modal-title">Are you Sure you want to delete ?</h5>
+                                                                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                                            </div>
+                                                                                            <div class="modal-body">
+                                                                                                <div class="form_cov">
+                                                                                                    <a href="#" class="close btn btn-lg" data-dismiss="modal">YES</a>
+                                                                                                    <a href="#" class="close btn btn-lg" data-dismiss="modal">NO</a>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </tr>
                                                                             <tr class="d-flex">
                                                                                 <td class="col-3">2020-03-03</td>

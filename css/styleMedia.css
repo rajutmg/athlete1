@@ -238,6 +238,18 @@
         padding: 4px !important;
         margin: 5px 0px !important;
     }
+    .card-body .form_cov {
+        padding: 20px 25px;
+    }
+    .edit_in .constant {
+        width: 30%;
+    }
+    .edit_input {
+        width: 70%;
+    }
+    .modal-dialog .form_cov {
+        padding: 20px 40px;
+    }
 }
 
 @media (min-width: 768px) {
