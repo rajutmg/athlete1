@@ -1,0 +1,329 @@
+.section_w {
+    position: relative;
+    margin: 60px 0;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.sec_title {
+    font-size: 42px;
+}
+
+#diceWrap {
+    margin-top: 60px;
+}
+
+#diceWrap .dice_cov {
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.dice {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 100%;
+    padding: 30px;
+}
+
+.dice img {
+    margin-right: 30px;
+}
+
+.dice:hover {
+    color: #fff;
+}
+
+.dice_cov:nth-child(1) .dice {
+    background: #8477ff;
+}
+
+.dice_cov:nth-child(2) .dice {
+    background: #0ae299;
+}
+
+.dice_cov:nth-child(3) .dice {
+    background: #feb84f;
+}
+
+.dice_cov:nth-child(4) .dice {
+    background: #6eccfc;
+}
+
+#workout_op {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#workout_op .d_product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    border-radius: 25px;
+}
+
+#workout_op .d_product:hover,
+#workout_op .d_product:focus {
+    color: #000;
+}
+
+#workout_op .d_product img {
+    height: 64px;
+    width: 64px;
+    margin-bottom: 0 !important;
+}
+
+#workout_op .d_product ion-icon {
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+    color: #000;
+}
+
+#workout_op .diet_cov {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+    color: #fff;
+}
+
+#workout_op .w_hym {
+    background: #FF0F97;
+}
+
+#workout_op .w_home {
+    background: #6458FF;
+}
+
+#workout_op .diet {
+    margin-top: 60px;
+}
+
+#workout_op .diet ul li {
+    font-size: 1.15rem;
+    font-weight: 300;
+    list-style: none;
+    line-height: 1.9;
+}
+
+#workout_op .diet .d_product {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#workout_op .diet .d_product img {
+    height: 50px;
+    width: 50px;
+}
+
+.diet_head {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.diet_head h3 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diet_section .dice_cov:nth-child(1) .dice {
+    background: #0ae299;
+}
+
+.diet_section .dice {
+    display: flex;
+    flex-direction: column;
+}
+
+.diet_section .dice img {
+    margin-right: 30px;
+    margin: 0;
+}
+
+.diet_section .dice h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.foot_form {
+    display: flex;
+    flex-direction: inherit;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.foot_form .form-control {
+    width: 35%;
+    border-radius: 6px;
+}
+
+.foot_form .button {
+    margin-left: 15px !important;
+}
+
+.socialWrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pricing p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.pricing .free {
+    font-size: 22px;
+}
+
+.pricing-title {
+    position: relative;
+}
+
+.pricing-title h2 {
+    margin: 20px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 29px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.pricing .holder {
+    position: absolute;
+    width: 100%;
+    top: -17px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.pricing .holder a {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 0 transparent;
+}
+
+.holder_bg {
+    position: absolute;
+    height: 44px;
+    width: 100%;
+    top: -60px;
+    background: #fff;
+}
+
+.holder_cov {
+    line-height: 0.1em;
+}
+
+.box_price:nth-child(1) .holder_cov {
+    border-bottom: 2px solid #c76dd5;
+}
+
+.box_price:nth-child(1) .holder a {
+    background: #c76dd5;
+}
+
+.box_price:nth-child(2) .holder_cov {
+    border-bottom: 2px solid #11b8bb;
+}
+
+.box_price:nth-child(2) .holder a {
+    background: #11b8bb;
+}
+
+.box_price:nth-child(3) .holder_cov {
+    border-bottom: 2px solid #ff6d8f;
+}
+
+.box_price:nth-child(3) .holder a {
+    background: #ff6d8f;
+}
+
+.dark h2 {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .sec_title {
+        font-size: 24px;
+    }
+    #diceWrap .dice_cov {
+        height: auto;
+    }
+    .dice {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #diceWrap p {
+        margin-bottom: 0;
+    }
+    .dice img {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    #logo img {
+        margin: 0 auto;
+    }
+    .dark .slider-caption h4 {
+        display: none;
+    }
+    #workout_op .lead,
+    .diet_section .lead {
+        margin-top: 30px;
+    }
+    .diet_section .dice {
+        align-items: center;
+    }
+    #workout_op {
+        padding-bottom: 20px;
+    }
+    .pricing-box {
+        margin: auto !important;
+    }
+    .box_price:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pricing-box {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .diet_section .dice {
+        height: 200px;
+    }
+    #workout_op .d_product {
+        height: 160px;
+    }
+    .box_price:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    #logo img {
+        margin: 0 auto;
+    }
+}
