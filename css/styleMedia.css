@@ -250,8 +250,10 @@
     .modal-dialog .form_cov {
         padding: 20px 40px;
     }
-    .delivered_box {
+    .delivered_box,
+    .error_box {
         font-size: 15px;
+        text-align: left;
     }
 }
 
