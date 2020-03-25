@@ -26,9 +26,11 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-lignt">
                 <a class="navbar-brand" href="index.html"><img src="img/fitexpert.png" class="img-responsive exp_logo" alt="fitexpert_logo"></a>
-                <a href="index.html" class="logo_text">
-                    <h2>HOME</h2>
-                    <h3>Welcome</h3>
+                <a class="back_arrow d-block d-sm-none" href="index.html">
+                    <ion-icon name="ios-arrow-back"></ion-icon>
+                </a>
+                <a href="calculator.html" class="logo_text">
+                    <h2>CONTACT US</h2>
                 </a>
 
                 <button class="navbar-toggler js-offcanvas-toggler custom-toggler" data-button-options='{"wrapText":false}' aria-label="Toggle navigation">
@@ -76,56 +78,48 @@
             </nav>
         </header>
         <main role="main">
-
-            <section id="diceWrap">
+            <section id="calculator_wrap">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="workout_op.html" class="dice">
-                                <img src="img/workouts.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/workouts@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>Workouts</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="list.html" class="dice">
-                                <img src="img/exercices.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/exercices@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>exercise</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="diet.html" class="dice">
-                                <img src="img/diets.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/diets@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>dites</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="#" class="dice">
-                                <img src="img/store.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/store@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>store</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="calculator.html" class="dice">
-                                <img src="img/calculator.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/calculator@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>calculator</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="setting.html" class="dice">
-                                <img src="img/setting.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/setting@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>setting</h3>
-                            </a>
+                        <div class="col-md-12">
+                            <div class="form_cov">
+                                <form id="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <div class="field_wrp">
+                                                <input type="text" class="form-control" placeholder="Name" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your Name
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <div class="field_wrp">
+                                                <input type="email" class="form-control" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your Email
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 form_flex mb-3">
+                                            <div class="field_wrp">
+                                                <textarea class="form-control counted" name="message" placeholder="Message" required rows="9" style="margin-bottom:10px;"></textarea>
+                                                <div class="invalid-feedback">
+                                                    Please write a message !
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-3" align="center">
+                                            <button type="submit" class="btn btn-primary calc_btn">SUBMIT</button>
+                                            <!-- Button to Open the Modal -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
         <footer>
             <section id="footWrap">
@@ -157,12 +151,32 @@
                         <p>Your email</p>
                     </div>
                 </div>
-                <!-- container for appendAround -->
+                <!-- container for appendAhround -->
                 <div class="offcanvas-nav d-block d-md-none" data-set="bs"></div>
             </div>
         </div>
         <a href="sign_in.html" class="mob_signin"><i class="fas fa-user-alt"></i> Sign in</a>
     </div>
+    <script>
+        $("#needs-validation").submit(function(event) {
+            if (this.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            this.classList.add('was-validated');
+        });
+
+        // Email validation.
+        $("#email").change(function() {
+            var email = $(this);
+            if (email.is(':invalid')) {
+                email.removeClass('is-valid').addClass('is-invalid');
+                email.siblings(".invalid-feedback").text(email.prop("validationMessage"))
+            } else {
+                email.removeClass('is-invalid').addClass('is-valid');
+            }
+        });
+    </script>
 </body>
 
 </html>

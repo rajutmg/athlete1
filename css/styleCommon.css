@@ -133,3 +133,21 @@ p {
     margin-top: 10px;
     font-size: 20px;
 }
+
+
+/* footer */
+
+#footWrap {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#footWrap a {
+    color: #333;
+}
+
+#footWrap a:not(:last-child):after {
+    content: "|";
+    color: #333;
+    margin: 0 10px;
+}
