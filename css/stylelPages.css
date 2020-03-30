@@ -263,6 +263,7 @@
         display: flex;
         text-align: left;
         color: #576574;
+        margin-bottom: 7px;
     }
     
     .checkLeft {
@@ -279,6 +280,7 @@
     
     .boxCheck label {
         margin-left: 5px;
+        margin-bottom: 0;
     }
     
     .form_wrap #footWrap a,
