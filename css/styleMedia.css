@@ -255,16 +255,22 @@
         font-size: 15px;
         text-align: left;
     }
-    /* .tik_tok_overlay,
-    #tik_tok {
-        height: 100vh;
-    } */
     .form_wrap .form_title {
         font-size: 22px !important;
     }
     #send_back {
         position: absolute;
     }
+}
+
+.createAccount .tik_tok_overlay,
+.createAccount #tik_tok {
+    height: auto;
+}
+
+.tik_tok_overlay,
+#tik_tok {
+    height: 100vh;
 }
 
 @media (min-width: 768px) {
