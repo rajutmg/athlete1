@@ -122,12 +122,10 @@
     /* tik_tok_page */
     
     #tik_tok {
-        height: 100vh;
         color: #fff;
     }
     
     .tik_tok_overlay {
-        height: 100vh;
         background: #7d72ff94;
         display: flex;
         flex-direction: column;
@@ -259,6 +257,44 @@
      ::-ms-input-placeholder {
         /* Microsoft Edge */
         color: #627284 !important;
+    }
+    
+    .boxCheck {
+        display: flex;
+        text-align: left;
+        color: #576574;
+    }
+    
+    .checkLeft {
+        margin-left: 10px;
+    }
+    
+    .boxCheck input {
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .boxCheck label {
+        margin-left: 5px;
+    }
+    
+    .form_wrap #footWrap a,
+    .form_wrap #footWrap a:not(:last-child):after {
+        color: #fff;
+    }
+    
+    .form_wrap .form_title {
+        font-size: 31px !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+    
+    .createAccount .form_wrap {
+        margin-top: 30px;
     }
     /* body_parts_page */
     
