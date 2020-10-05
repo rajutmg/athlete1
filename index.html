@@ -1,168 +1,370 @@
 <!DOCTYPE html>
 <html class="support-no-js">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ATHLETE</title>
-    <link rel="stylesheet" href="css/js-offcanvas.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styleCommon.css">
-    <link rel="stylesheet" href="css/stylelPages.css">
-    <link rel="stylesheet" href="css/styleMedia.css">
-    <link rel="stylesheet" href="css/styleNav.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/js-offcanvas.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styleCommon.css" />
+    <link rel="stylesheet" href="css/stylelPages.css" />
+    <link rel="stylesheet" href="css/styleMedia.css" />
+    <link rel="stylesheet" href="css/styleNav.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/js-offcanvas.pkgd.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="js/common.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="c-offcanvas-content-wrap">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-lignt">
-                <a class="navbar-brand" href="index.html"><img src="img/fitexpert.png" class="img-responsive exp_logo" alt="fitexpert_logo"></a>
-                <a href="index.html" class="logo_text">
-                    <h2>HOME</h2>
-                    <h3>Welcome</h3>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-lignt">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="img/fitexpert.png"
+              class="img-responsive exp_logo"
+              alt="fitexpert_logo"
+          /></a>
+          <a href="index.html" class="logo_text">
+            <h2>HOME</h2>
+            <h3>Welcome</h3>
+          </a>
+
+          <button
+            class="navbar-toggler js-offcanvas-toggler custom-toggler"
+            data-button-options='{"wrapText":false}'
+            aria-label="Toggle navigation"
+          >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line" style="margin-bottom: 0"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarsExampleDefault"
+            data-set="bs"
+          >
+            <ul class="navbar-nav mr-auto js-append-around">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  ><span class="d-block d-sm-none"
+                    ><ion-icon name="ios-home"></ion-icon
+                  ></span>
+                  Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="body_parts.html"
+                  ><span class="d-block d-sm-none"
+                    ><ion-icon name="ios-body"></ion-icon></span
+                  >Workouts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html"
+                  ><span class="d-block d-sm-none"
+                    ><ion-icon name="ios-calculator"></ion-icon
+                  ></span>
+                  Calculator</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="setting.html"
+                  ><span class="d-block d-sm-none"
+                    ><ion-icon name="md-cog"></ion-icon
+                  ></span>
+                  setting</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto js-append-around">
+              <li class="nav-item meSign_in">
+                <a class="nav-link" href="setting.html"> Signin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="language">
+            <div class="sl-nav">
+              <ul>
+                <li>
+                  <b>Eng</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <div class="triangle"></div>
+                  <ul>
+                    <li>
+                      <i class="sl-flag flag-de"
+                        ><img
+                          src="img/svg-24-512.png"
+                          class="img-responsive"
+                          alt="language_flag"
+                      /></i>
+                      <span class="active">Eng</span>
+                    </li>
+                    <li>
+                      <i class="sl-flag flag-usa"
+                        ><img
+                          src="img/ger_flag.png"
+                          class="img-responsive"
+                          alt="language_flag"
+                      /></i>
+                      <span>Ger</span>
+                    </li>
+                    <li>
+                      <i class="sl-flag flag-usa"
+                        ><img
+                          src="img/Esp_flag.png"
+                          class="img-responsive"
+                          alt="language_flag"
+                      /></i>
+                      <span>Esp</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main role="main">
+        <section id="diceWrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="workout_op.html" class="dice">
+                  <img
+                    src="img/workouts.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/workouts@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>Workouts</h3>
                 </a>
-
-                <button class="navbar-toggler js-offcanvas-toggler custom-toggler" data-button-options='{"wrapText":false}' aria-label="Toggle navigation">
-                        <span class="line"></span> 
-                        <span class="line"></span> 
-                        <span class="line" style="margin-bottom: 0;"></span>
-                            </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExampleDefault" data-set="bs">
-                    <ul class="navbar-nav mr-auto js-append-around">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html"><span class="d-block d-sm-none"><ion-icon name="ios-home"></ion-icon></span> Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="body_parts.html"><span class="d-block d-sm-none"><ion-icon name="ios-body"></ion-icon></span>Workouts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="calculator.html"><span class="d-block d-sm-none"><ion-icon name="ios-calculator"></ion-icon></span> Calculator</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="setting.html"><span class="d-block d-sm-none"><ion-icon name="md-cog"></ion-icon></span> setting</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto js-append-around">
-                        <li class="nav-item meSign_in">
-                            <a class="nav-link" href="setting.html">
-                                 Signin</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="language">
-                    <div class="sl-nav">
-                        <ul>
-                            <li><b>Eng</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                <div class="triangle"></div>
-                                <ul>
-                                    <li><i class="sl-flag flag-de"><img src="img/svg-24-512.png" class="img-responsive" alt="language_flag"></i> <span class="active">Eng</span></li>
-                                    <li><i class="sl-flag flag-usa"><img src="img/ger_flag.png" class="img-responsive" alt="language_flag"></i> <span>Ger</span></li>
-                                    <li><i class="sl-flag flag-usa"><img src="img/Esp_flag.png" class="img-responsive" alt="language_flag"></i> <span>Esp</span></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main role="main">
-
-            <section id="diceWrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="workout_op.html" class="dice">
-                                <img src="img/workouts.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/workouts@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>Workouts</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="list.html" class="dice">
-                                <img src="img/exercices.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/exercices@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>exercise</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="diet.html" class="dice">
-                                <img src="img/diets.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/diets@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>dites</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="#" class="dice">
-                                <img src="img/store.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/store@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>store</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="calculator.html" class="dice">
-                                <img src="img/calculator.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/calculator@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>calculator</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-6 dice_cov">
-                            <a href="setting.html" class="dice">
-                                <img src="img/setting.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                <img src="img/setting@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                <h3>setting</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-        <footer>
-            <section id="footWrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <a href="#">Terms</a>
-                            <a href="#">Privacy</a>
-                            <a href="#">DMCA</a>
-                            <a href="#">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </footer>
+              </div>
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="list.html" class="dice">
+                  <img
+                    src="img/exercices.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/exercices@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>exercise</h3>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="diet.html" class="dice">
+                  <img
+                    src="img/diets.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/diets@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>dites</h3>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="#" class="dice">
+                  <img
+                    src="img/store.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/store@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>store</h3>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="calculator.html" class="dice">
+                  <img
+                    src="img/calculator.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/calculator@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>calculator</h3>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-6 col-6 dice_cov">
+                <a href="setting.html" class="dice">
+                  <img
+                    src="img/setting.png"
+                    class="img-responsive d-block d-sm-none"
+                    alt="icon"
+                  />
+                  <img
+                    src="img/setting@2x.png"
+                    class="img-responsive d-none d-sm-block"
+                    alt="icon"
+                  />
+                  <h3>setting</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="footWrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">DMCA</a>
+                <a href="#">Contact Us</a>
+                <a data-toggle="modal" data-target="#unSub">Unsubscribe</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="unSub"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="unSubTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Unsubscribe
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure you want to cancel ?</p>
+                <button
+                  class="btn yesBtn"
+                  data-toggle="modal"
+                  data-target="#unSubConfirm"
+                  data-dismiss="modal"
+                >
+                  Yes
+                </button>
+                <button class="btn noBtn" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="unSubConfirm"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="unSubConfirmTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Unsubscribe
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Subscription Cancelled Successfully!!</p>
+                <button class="btn yesBtn" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <div class="c-offcanvas is-hidden" id="left" role="complementary">
-        <div class="navbar">
-            <div class="mob_offcanvas_cov">
-                <div class="burger_wrap clearfix">
-                    <h3 class="mob_menu">Menu</h3>
-                    <button type="button" class="btn btn-block btn-outline-dark js-offcanvas-close"><ion-icon name="ios-close"></ion-icon></button>
-                </div>
-                <div class="user_photo clearfix">
-                    <img src="img/defaultavatar.png" class="img-fluid" alt="user_photo">
-                    <div class="user_name">
-                        <h4>Not Logged in</h4>
-                        <p>Your email</p>
-                    </div>
-                </div>
-                <!-- container for appendAround -->
-                <div class="offcanvas-nav d-block d-md-none" data-set="bs"></div>
+      <div class="navbar">
+        <div class="mob_offcanvas_cov">
+          <div class="burger_wrap clearfix">
+            <h3 class="mob_menu">Menu</h3>
+            <button
+              type="button"
+              class="btn btn-block btn-outline-dark js-offcanvas-close"
+            >
+              <ion-icon name="ios-close"></ion-icon>
+            </button>
+          </div>
+          <div class="user_photo clearfix">
+            <img
+              src="img/defaultavatar.png"
+              class="img-fluid"
+              alt="user_photo"
+            />
+            <div class="user_name">
+              <h4>Not Logged in</h4>
+              <p>Your email</p>
             </div>
+          </div>
+          <!-- container for appendAround -->
+          <div class="offcanvas-nav d-block d-md-none" data-set="bs"></div>
         </div>
-        <a href="sign_in.html" class="mob_signin"><i class="fas fa-user-alt"></i> Sign in</a>
+      </div>
+      <a href="sign_in.html" class="mob_signin"
+        ><i class="fas fa-user-alt"></i> Sign in</a
+      >
     </div>
-</body>
-
+  </body>
 </html>
