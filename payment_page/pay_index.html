@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-
-<head>
-
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="SemiColonWeb" />
 
     <!-- Stylesheets
 	============================================= -->
     <link
-        href="http://fonts.googleapis.com/css?family=Poppins:300,400,400italic,600,700%7CPlayfair+Display:400,400italic,700%7CLato:300,400,700"
-        rel="stylesheet" type="text/css" />
+      href="http://fonts.googleapis.com/css?family=Poppins:300,400,400italic,600,700%7CPlayfair+Display:400,400italic,700%7CLato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -23,7 +23,11 @@
     <link rel="stylesheet" href="demos/gym/css/fonts.css" type="text/css" />
 
     <!-- Bootstrap Switch CSS -->
-    <link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/components/bs-switches.css"
+      type="text/css"
+    />
 
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,273 +45,379 @@
     <title>fitexpert</title>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <style>
-        .tp-caption.Gym-Display,
-        .Gym-Display {
-            font-family: 'Poppins', sans-serif;
-        }
+      .tp-caption.Gym-Display,
+      .Gym-Display {
+        font-family: 'Poppins', sans-serif;
+      }
 
-        .tp-caption.Gym-Display.font-secondary,
-        .Gym-Display.font-secondary {
-            font-family: 'Playfair Display', Serif;
-        }
+      .tp-caption.Gym-Display.font-secondary,
+      .Gym-Display.font-secondary {
+        font-family: 'Playfair Display', Serif;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="stretched">
-
+  <body class="stretched">
     <!-- Document Wrapper
 	============================================= -->
     <div id="wrapper" class="clearfix">
-
-        <!-- Header
+      <!-- Header
 		============================================= -->
-        <header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark">
+      <header
+        id="header"
+        class="full-header transparent-header dark"
+        data-sticky-class="not-dark"
+      >
+        <div id="header-wrap">
+          <div class="container clearfix">
+            <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-            <div id="header-wrap">
-
-                <div class="container clearfix">
-
-                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-                    <div class="d-md-block d-lg-flex justify-content-between">
-                        <!-- Logo
+            <div class="d-md-block d-lg-flex justify-content-between">
+              <!-- Logo
 						============================================= -->
-                        <div id="logo" class="m-0">
-                            <a href="index.html"><img src="../img/fitexpert.png" alt="Canvas Logo"></a>
-                        </div>
-                        <!-- #logo end -->
+              <div id="logo" class="m-0">
+                <a href="index.html"
+                  ><img src="../img/fitexpert.png" alt="Canvas Logo"
+                /></a>
+              </div>
+              <!-- #logo end -->
 
-                        <!-- Primary Navigation
+              <!-- Primary Navigation
 						============================================= -->
-                        <nav id="primary-menu" class="fnone not-dark">
-
-                            <ul class="norightborder m-0 p-0">
-                                <li class="current">
-                                    <a href="index.html">
-                                        <div>Home</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div>Price</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div>sign in</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div>Contact</div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </nav>
-                    </div>
-
-                </div>
-
+              <nav id="primary-menu" class="fnone not-dark">
+                <ul class="norightborder m-0 p-0">
+                  <li class="current">
+                    <a href="index.html">
+                      <div>Home</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>Price</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>sign in</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>Contact</div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
+          </div>
+        </div>
+      </header>
+      <!-- #header end -->
 
-        </header>
-        <!-- #header end -->
-
-        <!-- Slider
+      <!-- Slider
 		============================================= -->
-        <section id="slider" class="slider-element swiper_wrapper full-screen clearfix">
-
-            <div class="swiper-container swiper-parent">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide dark"
-                        style="background-image: url('demos/gym/images/slider/1.jpg'); background-size: cover">
-                        <div class="container clearfix">
-                            <div class="slider-caption slider-caption-center">
-                                <h2>You Earn Your Body.</h2>
-                                <h4>Helping you to achive your fitness goal and maintain it with a healthy lifestyle by
-                                    providing various solutions.</h4>
-                                <div class="d-md-flex divcenter d-none categories-lists mt-5 slider_listWrap"
-                                    style="width: 70%;">
-                                    <ul class="slider_list">
-                                        <li>I want to get healthy</li>
-                                        <li>I want to look Better</li>
-                                        <li>I will eat right</li>
-                                        <li>I will exercise</li>
-                                    </ul>
-                                    <p>I will earn my body !</p>
-                                </div>
-                                <div
-                                    class="d-flex justify-content-center align-items-center divcenter categories-lists">
-                                    <a href="#" class="button button-rounded button-large nott ml-4 align-self-center"
-                                        onclick="smoothScroll(document.getElementById('trial'))">Start Free Trial</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video-wrap" style="position: absolute; top: 0; left: 0; height: 100%; z-index:1;">
-                            <div class="video-overlay" style="background: rgba(0,0,0,0.5);"></div>
-                        </div>
-                    </div>
+      <section
+        id="slider"
+        class="slider-element swiper_wrapper full-screen clearfix"
+      >
+        <div class="swiper-container swiper-parent">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide dark"
+              style="
+                background-image: url('demos/gym/images/slider/1.jpg');
+                background-size: cover;
+              "
+            >
+              <div class="container clearfix">
+                <div class="slider-caption slider-caption-center">
+                  <h2>You Earn Your Body.</h2>
+                  <h4>
+                    Helping you to achive your fitness goal and maintain it with
+                    a healthy lifestyle by providing various solutions.
+                  </h4>
+                  <div
+                    class="d-md-flex divcenter d-none categories-lists mt-5 slider_listWrap"
+                    style="width: 70%"
+                  >
+                    <ul class="slider_list">
+                      <li>I want to get healthy</li>
+                      <li>I want to look Better</li>
+                      <li>I will eat right</li>
+                      <li>I will exercise</li>
+                    </ul>
+                    <p>I will earn my body !</p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center align-items-center divcenter categories-lists"
+                  >
+                    <a
+                      href="#"
+                      class="button button-rounded button-large nott ml-4 align-self-center"
+                      onclick="smoothScroll(document.getElementById('trial'))"
+                      >Start Free Trial</a
+                    >
+                  </div>
                 </div>
+              </div>
+              <div
+                class="video-wrap"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  z-index: 1;
+                "
+              >
+                <div
+                  class="video-overlay"
+                  style="background: rgba(0, 0, 0, 0.5)"
+                ></div>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Slider Mouse Icon
+        <!-- Slider Mouse Icon
 			============================================= -->
-            <a href="#" class="scroll-down d-none d-lg-block" data-scrollto="#content" data-offset="80">
-                <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
-            </a>
+        <a
+          href="#"
+          class="scroll-down d-none d-lg-block"
+          data-scrollto="#content"
+          data-offset="80"
+        >
+          <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        </a>
+      </section>
 
-        </section>
-
-        <!-- Content
+      <!-- Content
 		============================================= -->
-        <section id="content">
-            <div class="content-wrap notoppadding">
-
-                <div class="section nomargin media_background"
-                    style="background: url('demos/gym/images/section/bg-1.jpg') center bottom no-repeat; background-size: cover; padding: 80px 0 180px;">
-                    <div class="container clearfix">
-                        <div class="row clearfix">
-                            <div class="col-md-5 col-sm-7">
-                                <div class="notopmargin hidden-xs hidden-sm"></div>
-                                <div class="bottommargin-sm">
-                                    <h2 class="font-body t700 sec_title">Yesterday you said Tomorrow!</h2>
-                                </div>
-                                <p style="color: #777;" class="lead">Every body is having the same 24 hour in a day. You
-                                    decide how you want to spend yours</p>
-                            </div>
-                        </div>
-                    </div>
+      <section id="content">
+        <div class="content-wrap notoppadding">
+          <div
+            class="section nomargin media_background"
+            style="
+              background: url('demos/gym/images/section/bg-1.jpg') center bottom
+                no-repeat;
+              background-size: cover;
+              padding: 80px 0 180px;
+            "
+          >
+            <div class="container clearfix">
+              <div class="row clearfix">
+                <div class="col-md-5 col-sm-7">
+                  <div class="notopmargin hidden-xs hidden-sm"></div>
+                  <div class="bottommargin-sm">
+                    <h2 class="font-body t700 sec_title">
+                      Yesterday you said Tomorrow!
+                    </h2>
+                  </div>
+                  <p style="color: #777" class="lead">
+                    Every body is having the same 24 hour in a day. You decide
+                    how you want to spend yours
+                  </p>
                 </div>
-                <div class="section nomargin">
-                    <div class="container clearfix">
-                        <div class="divcenter center" style="max-width: 900px;">
-                            <h2 class="nobottommargin t700 ls1 sec_title">You'll Find Everything You Need To Achive Your
-                                Goals</h2>
-                        </div>
-                    </div>
-                    <section id="diceWrap">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
-                                    <a class="dice">
-                                        <img src="../img/workouts.png" class="img-responsive d-block d-sm-none"
-                                            alt="icon">
-                                        <img src="../img/workouts@2x.png" class="img-responsive d-none d-sm-block"
-                                            alt="icon">
-                                        <p class="lead">3 Types of Workout programs at Home or at Gym made by our
-                                            professional will guide you to achieve your goal fast and easy.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12  dice_cov">
-                                    <a class="dice">
-                                        <img src="../img/diets.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                        <img src="../img/diets@2x.png" class="img-responsive d-none d-sm-block"
-                                            alt="icon">
-                                        <p class="lead">Keeping a Diet was never easier! 90+ healthy recipes for
-                                            Breakfast, Lunch, Dinner, Snacks, Smoothies and Deserts are ready for you.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12  dice_cov">
-                                    <a class="dice">
-                                        <img src="../img/calculator.png" class="img-responsive d-block d-sm-none"
-                                            alt="icon">
-                                        <img src="../img/calculator@2x.png" class="img-responsive d-none d-sm-block"
-                                            alt="icon">
-                                        <p class="lead">Make sure you have the control ! Feel free to use anytime the
-                                            BMR calculator to stay on the track and achieve your goals.</p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
-                                    <a class="dice">
-                                        <img src="../img/exercices.png" class="img-responsive d-block d-sm-none"
-                                            alt="icon">
-                                        <img src="../img/exercices@2x.png" class="img-responsive d-none d-sm-block"
-                                            alt="icon">
-                                        <p class="lead">More than 50 best training exercises targeting each major muscle
-                                            groupgetting you closer to a better fitness level.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+              </div>
+            </div>
+          </div>
+          <div class="section nomargin">
+            <div class="container clearfix">
+              <div class="divcenter center" style="max-width: 900px">
+                <h2 class="nobottommargin t700 ls1 sec_title">
+                  You'll Find Everything You Need To Achive Your Goals
+                </h2>
+              </div>
+            </div>
+            <section id="diceWrap">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
+                    <a class="dice">
+                      <img
+                        src="../img/workouts.png"
+                        class="img-responsive d-block d-sm-none"
+                        alt="icon"
+                      />
+                      <img
+                        src="../img/workouts@2x.png"
+                        class="img-responsive d-none d-sm-block"
+                        alt="icon"
+                      />
+                      <p class="lead">
+                        3 Types of Workout programs at Home or at Gym made by
+                        our professional will guide you to achieve your goal
+                        fast and easy.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
+                    <a class="dice">
+                      <img
+                        src="../img/diets.png"
+                        class="img-responsive d-block d-sm-none"
+                        alt="icon"
+                      />
+                      <img
+                        src="../img/diets@2x.png"
+                        class="img-responsive d-none d-sm-block"
+                        alt="icon"
+                      />
+                      <p class="lead">
+                        Keeping a Diet was never easier! 90+ healthy recipes for
+                        Breakfast, Lunch, Dinner, Snacks, Smoothies and Deserts
+                        are ready for you.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
+                    <a class="dice">
+                      <img
+                        src="../img/calculator.png"
+                        class="img-responsive d-block d-sm-none"
+                        alt="icon"
+                      />
+                      <img
+                        src="../img/calculator@2x.png"
+                        class="img-responsive d-none d-sm-block"
+                        alt="icon"
+                      />
+                      <p class="lead">
+                        Make sure you have the control ! Feel free to use
+                        anytime the BMR calculator to stay on the track and
+                        achieve your goals.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 dice_cov">
+                    <a class="dice">
+                      <img
+                        src="../img/exercices.png"
+                        class="img-responsive d-block d-sm-none"
+                        alt="icon"
+                      />
+                      <img
+                        src="../img/exercices@2x.png"
+                        class="img-responsive d-none d-sm-block"
+                        alt="icon"
+                      />
+                      <p class="lead">
+                        More than 50 best training exercises targeting each
+                        major muscle groupgetting you closer to a better fitness
+                        level.
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div id="workout_op" class="section_w nomargin">
-                    <div class="container clearfix">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a class="d_product clearfix w_home">
-                                    <ion-icon name="ios-home" role="img" class="md hydrated" aria-label="home">
-                                    </ion-icon>
-                                    <h3 class="diet_cov">At Home</h3>
-                                </a>
-                            </div>
-                            <div class="col-sm-6" align="center">
-                                <p class="lead">You can <strong>start</strong> or continue
-                                    <strong>yourfitnessjourneytoday!Access30+Workouts</strong> from the comfort of your
-                                    home or from your favourite gym.Our trainers prepared the right workouts to help you
-                                    get your
-                                    desired results as soon as possible.</p>
-                            </div>
-                            <div class="col-sm-3">
-                                <a class="d_product clearfix w_hym">
-                                    <img src="../img/gym.png" class="img-fluid" alt="icon">
-                                    <h3 class="diet_cov">At Gym</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row diet">
-                            <div class="col-sm-6">
-                                <div class="diet_head">
-                                    <a class="d_product clearfix w_hym">
-                                        <img src="../img/lose-W.png" class="img-fluid" alt="icon">
-                                    </a>
-                                    <h3> Weight loss program</h3>
-                                </div>
-                                <p><strong>Look so good they can't ignore you!</strong> Are you looking to lose weight
-                                    in a healthy way? We have prepared for you the program that you've been looking for!
-                                    Consuming the right amount of calories per day and
-                                    training the proper way is what you can find inside FitExpert.</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="diet_head">
-                                    <a class="d_product clearfix w_home">
-                                        <img src="../img/Gain_M.png" class="img-fluid" alt="icon">
-                                    </a>
-                                    <h3>Muscle gain program</h3>
-                                </div>
-                                <p>As our coach says: " If you want to be strong, you need to get bigger! Also, the
-                                    bigger you get, the stronger you need to be. Training without having both in mind
-                                    doesn't make sense!" </p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </section>
+          </div>
+          <div id="workout_op" class="section_w nomargin">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a class="d_product clearfix w_home">
+                    <ion-icon
+                      name="ios-home"
+                      role="img"
+                      class="md hydrated"
+                      aria-label="home"
+                    >
+                    </ion-icon>
+                    <h3 class="diet_cov">At Home</h3>
+                  </a>
                 </div>
-                <div class="section nomargin diet_section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-4 dice_cov">
-                                <a class="dice">
-                                    <img src="../img/diets.png" class="img-responsive d-block d-sm-none" alt="icon">
-                                    <img src="../img/diets@2x.png" class="img-responsive d-none d-sm-block" alt="icon">
-                                    <h3>dites</h3>
-                                </a>
-                            </div>
-                            <div class="col-sm-9 col-md-8">
-                                <p class="lead">Carefully selected by our nutritionists, the meal recipes recommended in
-                                    the portal are clean, healthy and delicious. Rich in vegetables, fruits, whole
-                                    grains and fat-free for low-fat diary products, the reciopes include
-                                    lean meats, poultry, fish, beans, eggs and nuts also. A proper eating plan gives the
-                                    body the nutrients it needs every day while staying within the recommended daily
-                                    calorie goal for weight loss or muscle gain.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6" align="center">
+                  <p class="lead">
+                    You can <strong>start</strong> or continue
+                    <strong>yourfitnessjourneytoday!Access30+Workouts</strong>
+                    from the comfort of your home or from your favourite gym.Our
+                    trainers prepared the right workouts to help you get your
+                    desired results as soon as possible.
+                  </p>
                 </div>
-                <!-- <div class="section nomargin nopadding" style="background: url('demos/gym/images/section/bg-2.jpg') center center no-repeat; background-size: cover;">
+                <div class="col-sm-3">
+                  <a class="d_product clearfix w_hym">
+                    <img src="../img/gym.png" class="img-fluid" alt="icon" />
+                    <h3 class="diet_cov">At Gym</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="row diet">
+                <div class="col-sm-6">
+                  <div class="diet_head">
+                    <a class="d_product clearfix w_hym">
+                      <img
+                        src="../img/lose-W.png"
+                        class="img-fluid"
+                        alt="icon"
+                      />
+                    </a>
+                    <h3>Weight loss program</h3>
+                  </div>
+                  <p>
+                    <strong>Look so good they can't ignore you!</strong> Are you
+                    looking to lose weight in a healthy way? We have prepared
+                    for you the program that you've been looking for! Consuming
+                    the right amount of calories per day and training the proper
+                    way is what you can find inside FitExpert.
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="diet_head">
+                    <a class="d_product clearfix w_home">
+                      <img
+                        src="../img/Gain_M.png"
+                        class="img-fluid"
+                        alt="icon"
+                      />
+                    </a>
+                    <h3>Muscle gain program</h3>
+                  </div>
+                  <p>
+                    As our coach says: " If you want to be strong, you need to
+                    get bigger! Also, the bigger you get, the stronger you need
+                    to be. Training without having both in mind doesn't make
+                    sense!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section nomargin diet_section">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3 col-md-4 dice_cov">
+                  <a class="dice">
+                    <img
+                      src="../img/diets.png"
+                      class="img-responsive d-block d-sm-none"
+                      alt="icon"
+                    />
+                    <img
+                      src="../img/diets@2x.png"
+                      class="img-responsive d-none d-sm-block"
+                      alt="icon"
+                    />
+                    <h3>dites</h3>
+                  </a>
+                </div>
+                <div class="col-sm-9 col-md-8">
+                  <p class="lead">
+                    Carefully selected by our nutritionists, the meal recipes
+                    recommended in the portal are clean, healthy and delicious.
+                    Rich in vegetables, fruits, whole grains and fat-free for
+                    low-fat diary products, the reciopes include lean meats,
+                    poultry, fish, beans, eggs and nuts also. A proper eating
+                    plan gives the body the nutrients it needs every day while
+                    staying within the recommended daily calorie goal for weight
+                    loss or muscle gain.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="section nomargin nopadding" style="background: url('demos/gym/images/section/bg-2.jpg') center center no-repeat; background-size: cover;">
                     <div class="section nomargin" style="background: rgba(0,0,0,0.3);">
                         <div class="container clearfix">
                             <div class="dark nobottomborder nobottommargin center">
@@ -382,129 +492,218 @@
                         </div>
                     </div>
                 </div> -->
-                <div id="trial" class="section m-0 mobSlider">
-
-                    <div class="container clearfix">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-12 startFree">
-                                <a href="#" class="btn">Start Free Trial</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="sliderWrap">
-                        <div class="mobileWrap">
-                            <!-- <img src="./demos/device.png" class="img-fluid" alt="image"> -->
-                        </div>
-                        <div class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="40"
-                            data-center="true" data-loop="true" data-nav="false" data-pagi="true" data-items-xs="2"
-                            data-items-sm="3" data-items-md="4" data-items-lg="4" data-items-xl="5">
-
-                            <div class="oc-item">
-                                <a href="demos/carousel/1.png" data-lightbox="image">
-                                    <img src="demos/carousel/1.png" alt="Image 1">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/2.png" data-lightbox="image">
-                                    <img src="demos/carousel/2.png" alt="Image 2">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/3.png" data-lightbox="image">
-                                    <img src="demos/carousel/3.png" alt="Image 3">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/4.png" data-lightbox="image">
-                                    <img src="demos/carousel/4.png" alt="Image 4">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/5.png" data-lightbox="image">
-                                    <img src="demos/carousel/5.png" alt="Image 5">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/6.png" data-lightbox="image">
-                                    <img src="demos/carousel/6.png" alt="Image 6">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/7.png" data-lightbox="image">
-                                    <img src="demos/carousel/7.png" alt="Image 7">
-                                </a>
-                            </div>
-                            <div class="oc-item">
-                                <a href="demos/carousel/8.png" data-lightbox="image">
-                                    <img src="demos/carousel/8.png" alt="Image 7">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- #content end -->
-
-        <!-- Footer
-		============================================= -->
-        <footer id="footer" class="noborder"
-            style="background: url('demos/gym/images/section/1.jpg') center bottom no-repeat; background-size: cover;">
-
+          <div id="trial" class="section m-0 mobSlider">
             <div class="container clearfix">
+              <div class="row justify-content-center">
+                <div class="col-sm-12 startFree">
+                  <a href="#" class="btn">Start Free Trial</a>
+                </div>
+              </div>
+            </div>
+            <div id="sliderWrap">
+              <div class="mobileWrap">
+                <!-- <img src="./demos/device.png" class="img-fluid" alt="image"> -->
+              </div>
+              <div
+                class="owl-carousel owl-carousel-full image-carousel carousel-widget"
+                data-margin="40"
+                data-center="true"
+                data-loop="true"
+                data-nav="false"
+                data-pagi="true"
+                data-items-xs="2"
+                data-items-sm="3"
+                data-items-md="4"
+                data-items-lg="4"
+                data-items-xl="5"
+              >
+                <div class="oc-item">
+                  <a href="demos/carousel/1.png" data-lightbox="image">
+                    <img src="demos/carousel/1.png" alt="Image 1" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/2.png" data-lightbox="image">
+                    <img src="demos/carousel/2.png" alt="Image 2" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/3.png" data-lightbox="image">
+                    <img src="demos/carousel/3.png" alt="Image 3" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/4.png" data-lightbox="image">
+                    <img src="demos/carousel/4.png" alt="Image 4" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/5.png" data-lightbox="image">
+                    <img src="demos/carousel/5.png" alt="Image 5" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/6.png" data-lightbox="image">
+                    <img src="demos/carousel/6.png" alt="Image 6" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/7.png" data-lightbox="image">
+                    <img src="demos/carousel/7.png" alt="Image 7" />
+                  </a>
+                </div>
+                <div class="oc-item">
+                  <a href="demos/carousel/8.png" data-lightbox="image">
+                    <img src="demos/carousel/8.png" alt="Image 7" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
 
-                <!-- Footer Widgets
+      <!-- Footer
+		============================================= -->
+      <footer
+        id="footer"
+        class="noborder"
+        style="
+          background: url('demos/gym/images/section/1.jpg') center bottom
+            no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="container clearfix">
+          <!-- Footer Widgets
 				============================================= -->
-                <div class="footer-widgets-wrap clearfix">
-
-                    <div class="row widget clearfix">
-
-                        <div class="tleft col-sm-7">
-                            <h4 style="font-size: 21px;">Want to live recive FREE workouts and healthy life style tips ?
-                            </h4>
-                            <form action="#" class="mb-1 clearfix">
-                                <div class="col_full foot_form">
-                                    <div class="row">
-                                        <div class="col-md-6 foot_form_left"><input type="email"
-                                                id="template-footer-form-email" name="template-footer-form-email"
-                                                placeholder="Email" value="" class="form-control not-dark" />
-                                            <div class="error_message">Error Message</div>
-                                        </div>
-                                        <div class="col-md-6 foot_form_right"> <button type="submit"
-                                                class="t400 capitalize button button-border button-dark button-circle nomargin"
-                                                value="submit">Register Now</button></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="tleft col-sm-4">
-                        </div>
+          <div class="footer-widgets-wrap clearfix">
+            <div class="row widget clearfix">
+              <div class="tleft col-sm-7">
+                <h4 style="font-size: 21px">
+                  Want to live recive FREE workouts and healthy life style tips
+                  ?
+                </h4>
+                <form action="#" class="mb-1 clearfix">
+                  <div class="col_full foot_form">
+                    <div class="row">
+                      <div class="col-md-6 foot_form_left">
+                        <input
+                          type="email"
+                          id="template-footer-form-email"
+                          name="template-footer-form-email"
+                          placeholder="Email"
+                          value=""
+                          class="form-control not-dark"
+                        />
+                        <div class="error_message">Error Message</div>
+                      </div>
+                      <div class="col-md-6 foot_form_right">
+                        <button
+                          type="submit"
+                          class="t400 capitalize button button-border button-dark button-circle nomargin"
+                          value="submit"
+                        >
+                          Register Now
+                        </button>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+                </form>
+              </div>
 
-            <!-- Copyrights
+              <div class="tleft col-sm-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyrights
 			============================================= -->
-            <div id="copyrights" class="center" style="background-color: #FFF;">
-
-                <div class="container clearfix">
-
-                    <div class="clearfix">
-                        Copyrights &copy; 2020 All Rights Reserved by Fitexpert.<br>
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a> / <a
-                                href="#">DMCA</a> / <a href="#">Contact</a></div>
-                    </div>
-
-                </div>
-
+        <div id="copyrights" class="center" style="background-color: #fff">
+          <div class="container clearfix">
+            <div class="clearfix">
+              Copyrights &copy; 2020 All Rights Reserved by Fitexpert.<br />
+              <div class="copyright-links">
+                <a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a> /
+                <a href="#">DMCA</a> / <a href="#">Contact</a> /
+                <a data-toggle="modal" data-target="#unSub">Unsubscribe</a>
+              </div>
             </div>
-            <!-- #copyrights end -->
-
-        </footer>
-        <!-- #footer end -->
-
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="unSub"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="unSubTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Unsubscribe
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Are you sure you want to cancel ?</p>
+                    <button
+                      class="btn yesBtn"
+                      data-toggle="modal"
+                      data-target="#unSubConfirm"
+                      data-dismiss="modal"
+                    >
+                      Yes
+                    </button>
+                    <button class="btn noBtn" data-dismiss="modal">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="unSubConfirm"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="unSubConfirmTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Unsubscribe
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Subscription Cancelled Successfully!!</p>
+                    <button class="btn yesBtn" data-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
     </div>
     <!-- #wrapper end -->
 
@@ -524,50 +723,59 @@
 	============================================= -->
     <script src="js/functions.js"></script>
     <script>
-        jQuery(document).ready(function ($) {
+      jQuery(document).ready(function ($) {
+        /* Pricing Switcher */
+        function pricingSwitcher(elementCheck, elementParent, elementPricing) {
+          elementParent
+            .find('.pts-left,.pts-right')
+            .removeClass('pts-switch-active');
+          elementPricing
+            .find('.pts-switch-content-left,.pts-switch-content-right')
+            .addClass('hidden');
 
-            /* Pricing Switcher */
-            function pricingSwitcher(elementCheck, elementParent, elementPricing) {
-                elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
-                elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+          if (elementCheck.filter(':checked').length > 0) {
+            elementParent.find('.pts-right').addClass('pts-switch-active');
+            elementPricing
+              .find('.pts-switch-content-right')
+              .removeClass('hidden');
+          } else {
+            elementParent.find('.pts-left').addClass('pts-switch-active');
+            elementPricing
+              .find('.pts-switch-content-left')
+              .removeClass('hidden');
+          }
+        }
 
-                if (elementCheck.filter(':checked').length > 0) {
-                    elementParent.find('.pts-right').addClass('pts-switch-active');
-                    elementPricing.find('.pts-switch-content-right').removeClass('hidden');
-                } else {
-                    elementParent.find('.pts-left').addClass('pts-switch-active');
-                    elementPricing.find('.pts-switch-content-left').removeClass('hidden');
-                }
-            }
+        $('.pts-switcher').each(function () {
+          var element = $(this),
+            elementCheck = element.find(':checkbox'),
+            elementParent = $(this).parents('.pricing-tenure-switcher'),
+            elementPricing = $(elementParent.attr('data-container'));
 
-            $('.pts-switcher').each(function () {
-                var element = $(this),
-                    elementCheck = element.find(':checkbox'),
-                    elementParent = $(this).parents('.pricing-tenure-switcher'),
-                    elementPricing = $(elementParent.attr('data-container'));
+          pricingSwitcher(elementCheck, elementParent, elementPricing);
 
-                pricingSwitcher(elementCheck, elementParent, elementPricing);
-
-                elementCheck.on('change', function () {
-                    pricingSwitcher(elementCheck, elementParent, elementPricing);
-                });
-            });
-
-            $('[data-pricing-plan]').click(function () {
-                getStartedForm.find('#get-started-form-package').val($(this).attr('data-pricing-plan'));
-                getStartedForm.find('#modal-get-started-package').html($(this).attr('data-pricing-plan'));
-            });
-
+          elementCheck.on('change', function () {
+            pricingSwitcher(elementCheck, elementParent, elementPricing);
+          });
         });
 
-        jQuery(window).on('load', function () {
-            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-                default_offset_pct: 0.7
-            });
+        $('[data-pricing-plan]').click(function () {
+          getStartedForm
+            .find('#get-started-form-package')
+            .val($(this).attr('data-pricing-plan'));
+          getStartedForm
+            .find('#modal-get-started-package')
+            .html($(this).attr('data-pricing-plan'));
         });
+      });
 
+      jQuery(window).on('load', function () {
+        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty(
+          {
+            default_offset_pct: 0.7,
+          }
+        );
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
